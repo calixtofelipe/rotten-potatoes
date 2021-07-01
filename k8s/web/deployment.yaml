@@ -13,7 +13,7 @@ spec:
     spec: 
       containers:
         - name: movies
-          image: fabricioveronez/rotten-potatoes:v1 
+          image: calixtofelipe/rotten-popetoes:v1 
           ports:
             - containerPort: 5000
           env: 
@@ -38,8 +38,8 @@ spec:
   selector:
     app: movies
   ports: 
-  - port: 80
-    targetPort: 5000
-    nodePort: 30000
-  type: LoadBalancer
+  - port: 80 #porta do service
+    targetPort: 5000 #porta do container
+    nodePort: 30000 #porta node
+  type: NodePort #no video está nodeport LoadBalancer
   

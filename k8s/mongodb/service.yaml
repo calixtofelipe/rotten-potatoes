@@ -6,8 +6,8 @@ spec:
   selector:
     app: mongodb
   ports:
-    - port: 27017
-      targetPort: 27017
+    - port: 27017 #porta do servico
+      targetPort: 27017 #porta do container
   type: ClusterIP
 
   
